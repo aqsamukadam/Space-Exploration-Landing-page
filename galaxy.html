@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Space1.css ">
+    <title>Space Version 1</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+   
+    position: relative;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+}
+nav ul li a:hover {
+    color: #b791be;
+}
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 160px;
+    color: #fff;
+}
+
+.content a {
+    color: white;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}
+.dashboard {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+section{
+    padding: 30px 18%;
+}
+.heading{
+  height: 150px;
+  color:#fff;
+  align-content: center;
+  text-align: center;
+  border: 1px solid rgba(193, 2, 142,0.3);
+  border-radius:10px;
+  
+}
+.flex_properties{
+    border: 1px solid rgb(193, 2, 142);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.flex_properties>div{
+    border-radius: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    overflow: hidden; 
+    
+}
+div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.flexBox:hover{
+      flex-basis: 50%;
+}
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Home page  -->
+    <section class="main">
+        <video autoplay loop muted class="dashboard">
+            <source src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/galaxy1.mp4" type="video/mp4">
+        </video>
+        <nav>
+            <a href="#" class="logo">Space</a>
+            <ul type="none">
+                <li><a href="">Home</a></li>
+                <li><a href="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/Animation.html">Explore</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Galaxy</h1>
+            <a href="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/Animation.html">Explore</a>
+        </div>
+    </section>
+
+    <!-- flex box property -->
+
+    <section><div class="heading">
+        <h2>--- Exhibition Gallery ---</h2>
+      </div>
+
+        <div class="flex_properties">
+            <div class="flexBox "><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image1.jpg" alt=""></div>
+            <div class="flexBox "><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image2.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image3.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image4.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image5.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image1.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image2.jpg" alt=""></div>
+            <div class="flexBox"><img src="https://itv-contentbucket.s3.ap-south-1.amazonaws.com/Web+Development+Assets/Projects/6.space/asset/image3.jpg" alt=""></div>
+        </div>
+    </section>
+</body>
+
+</html>
